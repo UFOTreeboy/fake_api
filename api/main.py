@@ -10,7 +10,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 
-@app.get("/")
+@app.get("/chartline")
 async def read_me():
     testdata={
         "1":"15",
